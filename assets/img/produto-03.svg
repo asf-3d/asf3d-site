@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b9ce0"/><stop offset="1" stop-color="#13d0c8"/></linearGradient></defs>
+<rect width="600" height="600" rx="40" fill="#18232d"/>
+<circle cx="480" cy="110" r="120" fill="#0b9ce0" opacity=".12"/>
+<circle cx="100" cy="510" r="140" fill="#13d0c8" opacity=".08"/>
+<path d="M300 100c96 0 174 78 174 174S396 448 300 448 126 370 126 274 204 100 300 100Z" fill="url(#g)"/><path d="M220 250h40M340 250h40M240 340c38 32 82 32 120 0" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="18" stroke-linecap="round"/>
+<text x="300" y="548" text-anchor="middle" fill="#aeb8cf" font-family="Arial,sans-serif" font-size="22">Miniatura — imagem provisória</text>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "loja-impressao-3d",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "homepage": "https://asf-3d.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asf-3d/asf-3d.github.io.git"
+  }
+}

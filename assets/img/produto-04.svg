@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b9ce0"/><stop offset="1" stop-color="#13d0c8"/></linearGradient></defs>
+<rect width="600" height="600" rx="40" fill="#18232d"/>
+<circle cx="480" cy="110" r="120" fill="#0b9ce0" opacity=".12"/>
+<circle cx="100" cy="510" r="140" fill="#13d0c8" opacity=".08"/>
+<rect x="118" y="135" width="364" height="330" rx="44" fill="url(#g)"/><path d="M300 135v330M118 300h364" stroke="#18232d" stroke-width="28" opacity=".75"/>
+<text x="300" y="548" text-anchor="middle" fill="#aeb8cf" font-family="Arial,sans-serif" font-size="22">Organizador — imagem provisória</text>
+</svg>

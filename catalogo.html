@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo ASF3D com produtos disponíveis para impressão e opção de solicitar peças 3D personalizadas." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Catálogo | ASF3D" />
+  <meta property="og:description" content="Veja modelos disponíveis para impressão ou solicite uma peça 3D personalizada." />
+  <meta property="og:url" content="https://asf-3d.github.io/catalogo.html" />
+  <meta property="og:image" content="https://asf-3d.github.io/assets/img/logo-asf3d.png" />
+
+  <title>Catálogo | ASF3D</title>
+
+  <!-- Quando tiver o domínio, substitua pela URL real -->
+  <!-- <link rel="canonical" href="https://seudominio.com.br/catalogo.html"> -->
+
+  <link rel="icon" href="assets/img/logo-asf3d.png" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <img data-brand-logo src="assets/img/logo-asf3d.png" alt="Logo" />
+        <span data-company-name>ASF3D</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a class="active" href="catalogo.html">Catálogo</a>
+        <a class="btn btn-small btn-outline whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container reveal">
+        <span class="eyebrow">CATÁLOGO ASF3D</span>
+        <h1>Escolha um modelo ou use como inspiração.</h1>
+        <p>
+          Veja os produtos disponíveis para impressão. Se não encontrar exatamente o que procura,
+          também podemos avaliar uma peça personalizada a partir da sua ideia, referência ou arquivo 3D.
+        </p>
+        <div class="hero-actions catalog-hero-actions">
+          <a class="btn btn-primary custom-whatsapp-link" href="#" target="_blank" rel="noopener">
+            Solicitar algo personalizado
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section">
+      <div class="container">
+        <div class="catalog-toolbar reveal">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="catalog-search" type="search" placeholder="Buscar produto..." autocomplete="off" />
+          </label>
+          <div id="category-filters" class="filter-list" aria-label="Filtros de categoria"></div>
+        </div>
+
+        <div class="catalog-meta">
+          <span id="catalog-count"></span>
+        </div>
+
+        <div class="product-grid" id="catalog-products"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <strong>Nenhum produto encontrado.</strong>
+          <span>Tente outro termo ou categoria.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img data-brand-logo src="assets/img/logo-asf3d.png" alt="Logo" />
+          <span data-company-name>ASF3D</span>
+        </a>
+        <p>Modelos do catálogo e impressões 3D personalizadas sob encomenda.</p>
+      </div>
+      <div>
+        <strong>Navegação</strong>
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+      </div>
+      <div>
+        <strong>Contato</strong>
+        <a class="whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a data-instagram-link href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> <span data-company-name>ASF3D</span>.</span>
+      <span>Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp whatsapp-link" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <span>✆</span>
+  </a>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
