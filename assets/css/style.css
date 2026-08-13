@@ -1130,3 +1130,995 @@ button {
 .catalog-hero-actions .btn {
   width: fit-content;
 }
+
+
+/* ==========================================================
+   Impressora 3D — versão mais reconhecível e mais realista
+   Continua sendo uma ilustração CSS, não uma imagem.
+   ========================================================== */
+
+.printer-scene {
+  position: absolute;
+  inset: 60px 58px 52px;
+}
+
+.printer-frame-top {
+  position: absolute;
+  top: 10px;
+  left: 26px;
+  right: 26px;
+  height: 18px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #567789, #324651);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.printer-column {
+  position: absolute;
+  top: 18px;
+  bottom: 72px;
+  width: 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #44606e, #24323a);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+.printer-column.left {
+  left: 34px;
+}
+
+.printer-column.right {
+  right: 34px;
+}
+
+.printer-gantry {
+  position: absolute;
+  top: 112px;
+  left: 46px;
+  right: 46px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3e5766, #57798d, #3e5766);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.14);
+}
+
+.printer-belt {
+  position: absolute;
+  top: 116px;
+  left: 54px;
+  right: 54px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(18, 26, 34, 0.88);
+}
+
+.printer-head {
+  position: absolute;
+  top: 92px;
+  left: calc(50% - 34px);
+  width: 68px;
+  height: 58px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #4d7082, #243642);
+  box-shadow:
+    0 14px 24px rgba(0,0,0,0.25),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.printer-head::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  right: 14px;
+  height: 12px;
+  border-radius: 8px 8px 2px 2px;
+  background: linear-gradient(180deg, #66899b, #38505e);
+}
+
+.printer-head::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 22px;
+  width: 24px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(15, 26, 34, 0.55);
+}
+
+.printer-nozzle {
+  position: absolute;
+  top: 145px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 24px;
+  background: linear-gradient(180deg, #13d0c8, #0e75db);
+  clip-path: polygon(20% 0, 80% 0, 100% 70%, 50% 100%, 0 70%);
+  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.18));
+}
+
+.printer-spool {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #1b2b35 0 18px, transparent 18px 24px, #27d8cd 24px 31px, transparent 31px 37px, #0b9ce0 37px 44px, transparent 44px 50px, #18bfb8 50px 56px, transparent 56px);
+  opacity: 0.92;
+  filter: drop-shadow(0 12px 22px rgba(0,0,0,0.18));
+}
+
+.printer-spool::after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 42px;
+  width: 62px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(19,208,200,0), rgba(19,208,200,0.6));
+}
+
+.printed-object {
+  position: absolute;
+  left: calc(50% - 54px);
+  bottom: 66px;
+  width: 108px;
+  height: 92px;
+  border-radius: 18px 18px 14px 14px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.10) 0,
+      rgba(255,255,255,0.10) 2px,
+      transparent 2px,
+      transparent 7px
+    ),
+    linear-gradient(145deg, #0e75db, #0b9ce0 52%, #13d0c8);
+  box-shadow:
+    0 16px 30px rgba(11,156,224,0.18),
+    inset 0 0 0 1px rgba(255,255,255,0.10);
+  clip-path: polygon(10% 100%, 10% 28%, 24% 14%, 76% 14%, 90% 28%, 90% 100%);
+}
+
+.printed-object::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  top: 10px;
+  height: 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+}
+
+.printed-object::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 16px;
+  background: rgba(19,208,200,0.55);
+  box-shadow: 0 0 10px rgba(19,208,200,0.25);
+}
+
+.printer-bed {
+  position: absolute;
+  left: 54px;
+  right: 54px;
+  bottom: 44px;
+  height: 18px;
+  transform: perspective(180px) rotateX(18deg);
+  border-radius: 6px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 12px),
+    linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 12px),
+    linear-gradient(90deg, #3a5565, #678699, #3a5565);
+  background-size: 12px 12px, 12px 12px, 100% 100%;
+  box-shadow:
+    0 14px 20px rgba(0,0,0,0.28),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.printer-base {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 18px;
+  height: 28px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2e4552, #1b2b35);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.20);
+}
+
+@media (max-width: 760px) {
+  .printer-scene {
+    inset: 48px 34px 40px;
+  }
+
+  .printer-spool {
+    width: 72px;
+    height: 72px;
+  }
+
+  .printer-spool::after {
+    left: -44px;
+    width: 46px;
+  }
+
+  .printed-object {
+    width: 90px;
+    height: 78px;
+    left: calc(50% - 45px);
+  }
+}
+
+@media (max-width: 480px) {
+  .printer-scene {
+    inset: 46px 24px 36px;
+  }
+
+  .printer-column.left {
+    left: 20px;
+  }
+
+  .printer-column.right {
+    right: 20px;
+  }
+
+  .printer-frame-top {
+    left: 12px;
+    right: 12px;
+  }
+
+  .printer-bed {
+    left: 32px;
+    right: 32px;
+  }
+
+  .printer-base {
+    left: 18px;
+    right: 18px;
+  }
+
+  .printer-spool {
+    top: 52px;
+    right: -2px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/* ==========================================================
+   Galeria ampliada / Lightbox de produtos
+   ========================================================== */
+
+.product-image-button {
+  width: 100%;
+  display: block;
+  border: 0;
+  color: inherit;
+  text-align: inherit;
+  cursor: zoom-in;
+  font: inherit;
+}
+
+.product-image-button:focus-visible {
+  outline: 3px solid rgba(19, 208, 200, 0.72);
+  outline-offset: -3px;
+}
+
+.product-image-button img {
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.product-image-button:hover img {
+  transform: scale(1.025);
+  filter: brightness(1.04);
+}
+
+.image-expand-hint {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 35px;
+  padding: 0 11px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(12, 20, 27, 0.72);
+  backdrop-filter: blur(12px);
+  font-size: 0.74rem;
+  font-weight: 750;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+.product-image-button:hover .image-expand-hint,
+.product-image-button:focus-visible .image-expand-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.expand-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.image-lightbox.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.image-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 8, 12, 0.88);
+  backdrop-filter: blur(12px);
+  cursor: zoom-out;
+}
+
+.image-lightbox-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 94vw);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(73, 205, 226, 0.18);
+  border-radius: 24px;
+  background: #121c24;
+  box-shadow:
+    0 30px 90px rgba(0,0,0,0.58),
+    0 0 80px rgba(11,156,224,0.08);
+  transform: translateY(12px) scale(0.985);
+  transition: transform 180ms ease;
+}
+
+.image-lightbox.open .image-lightbox-dialog {
+  transform: none;
+}
+
+.image-lightbox-media {
+  min-height: 0;
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(11,156,224,0.12), transparent 38rem),
+    #0c141b;
+}
+
+.image-lightbox-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(74vh, 820px);
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 50%;
+  color: white;
+  background: rgba(12,20,27,0.78);
+  backdrop-filter: blur(10px);
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.image-lightbox-close:hover {
+  transform: scale(1.06);
+  background: rgba(24, 46, 58, 0.94);
+}
+
+.image-lightbox-close:focus-visible {
+  outline: 3px solid rgba(19,208,200,0.72);
+  outline-offset: 2px;
+}
+
+.image-lightbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 20px 17px;
+  border-top: 1px solid var(--line);
+  background: #15212a;
+}
+
+.image-lightbox-footer strong {
+  min-width: 0;
+  font-size: 0.95rem;
+}
+
+.image-lightbox-footer span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  text-align: right;
+}
+
+
+/* ==========================================================
+   Responsividade reforçada
+   ========================================================== */
+
+@media (hover: none), (pointer: coarse) {
+  .image-expand-hint {
+    opacity: 1;
+    transform: none;
+  }
+
+  .btn:hover,
+  .product-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .catalog-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .filter-list {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 0 8px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .site-header {
+    backdrop-filter: blur(15px);
+  }
+
+  .nav-wrap {
+    min-height: 74px;
+  }
+
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.025);
+  }
+
+  .main-nav {
+    left: 14px;
+    right: 14px;
+    top: 68px;
+    max-height: calc(100vh - 86px);
+    overflow-y: auto;
+  }
+
+  .main-nav > a:not(.btn) {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav .btn {
+    min-height: 46px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 52px 0 54px;
+  }
+
+  .hero-brand-logo {
+    width: 116px;
+    margin-bottom: 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.55rem, 13vw, 4rem);
+    line-height: 1;
+  }
+
+  .hero-copy > p {
+    margin-top: 21px;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .visual-card {
+    min-height: 390px;
+    border-radius: 26px;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 34px;
+  }
+
+  .section-heading h2,
+  .section-row h2,
+  .cta h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .feature-grid,
+  .product-grid,
+  .steps,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    gap: 18px;
+  }
+
+  .product-card {
+    border-radius: 18px;
+  }
+
+  .product-image {
+    aspect-ratio: 16 / 12;
+  }
+
+  .product-body {
+    padding: 19px;
+  }
+
+  .product-body p {
+    min-height: auto;
+  }
+
+  .product-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .product-footer .btn {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .section-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .steps {
+    gap: 0;
+  }
+
+  .step {
+    min-height: auto;
+    padding: 24px 10px 28px;
+  }
+
+  .step > span {
+    margin-bottom: 22px;
+  }
+
+  .cta {
+    padding: 30px 24px;
+    border-radius: 22px;
+  }
+
+  .cta .btn {
+    width: 100%;
+  }
+
+  .catalog-hero {
+    padding: 64px 0 42px;
+  }
+
+  .catalog-hero h1 {
+    font-size: clamp(2.5rem, 13vw, 4.3rem);
+  }
+
+  .catalog-hero p {
+    font-size: 0.98rem;
+  }
+
+  .catalog-hero-actions {
+    width: 100%;
+  }
+
+  .catalog-hero-actions .btn {
+    width: 100%;
+  }
+
+  .catalog-toolbar {
+    gap: 13px;
+  }
+
+  .search-box {
+    min-height: 50px;
+  }
+
+  .filter-list {
+    margin-inline: -2px;
+  }
+
+  .filter-btn {
+    min-height: 42px;
+    padding-inline: 15px;
+  }
+
+  .footer-grid {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    margin-top: 36px;
+  }
+
+  .floating-whatsapp {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .image-lightbox {
+    padding: 12px;
+  }
+
+  .image-lightbox-dialog {
+    width: 100%;
+    max-height: 94vh;
+    border-radius: 18px;
+  }
+
+  .image-lightbox-media {
+    padding: 12px;
+  }
+
+  .image-lightbox-img {
+    max-height: 76vh;
+    border-radius: 12px;
+  }
+
+  .image-lightbox-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    padding: 12px 15px 14px;
+  }
+
+  .image-lightbox-footer span {
+    display: none;
+  }
+
+  .image-lightbox-close {
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(calc(100% - 22px), var(--container));
+  }
+
+  .brand img {
+    width: 58px;
+    height: 50px;
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+
+  .visual-card {
+    min-height: 340px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+  }
+
+  .product-image {
+    aspect-ratio: 1 / 0.82;
+    padding: 12px;
+  }
+
+  .image-expand-hint {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .cta {
+    padding: 26px 20px;
+  }
+}
+
+
+/* ==========================================================
+   ASF3D - LIGHTBOX V2
+   Este bloco fica no final para prevalecer sobre estilos antigos.
+   ========================================================== */
+
+.product-image-button {
+  position: relative !important;
+  width: 100% !important;
+  height: auto;
+  display: block !important;
+  padding: 18px !important;
+  border: 0 !important;
+  outline: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(11, 156, 224, 0.17), rgba(19, 208, 200, 0.08)),
+    #18232d !important;
+  cursor: zoom-in !important;
+  appearance: none;
+  -webkit-appearance: none;
+  touch-action: manipulation;
+}
+
+.product-image-button img {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover !important;
+  border-radius: 14px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 180ms ease;
+}
+
+.product-image-button:hover img {
+  transform: scale(1.025);
+}
+
+.product-image-button .product-badge,
+.product-image-button .image-expand-hint {
+  pointer-events: none;
+}
+
+.image-expand-hint {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(10, 18, 24, 0.78);
+  backdrop-filter: blur(10px);
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+body.lightbox-open {
+  overflow: hidden !important;
+}
+
+.product-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.product-lightbox.is-open {
+  display: flex;
+}
+
+.product-lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 8, 12, 0.90);
+  backdrop-filter: blur(10px);
+  cursor: zoom-out;
+}
+
+.product-lightbox-content {
+  position: relative;
+  z-index: 1;
+  width: min(1000px, 94vw);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid rgba(19, 208, 200, 0.22);
+  border-radius: 22px;
+  background: #111b23;
+  box-shadow: 0 30px 100px rgba(0,0,0,0.60);
+}
+
+.product-lightbox-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.product-lightbox-caption {
+  width: 100%;
+  padding: 14px 6px 2px;
+  color: #f7f9fb;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(13, 24, 31, 0.88);
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.product-lightbox-close:hover {
+  background: #203844;
+}
+
+@media (max-width: 760px) {
+  .product-image-button {
+    padding: 12px !important;
+  }
+
+  .product-image-button img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .image-expand-hint {
+    right: 22px;
+    bottom: 22px;
+  }
+
+  .product-lightbox {
+    padding: 10px;
+  }
+
+  .product-lightbox-content {
+    width: 100%;
+    max-height: 95vh;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .product-lightbox-image {
+    max-height: 80vh;
+    border-radius: 10px;
+  }
+
+  .product-lightbox-close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .product-lightbox-caption {
+    padding-top: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .image-expand-hint {
+    display: inline-flex;
+  }
+}

@@ -15,70 +15,50 @@
 
 window.SITE_CONFIG = {
   companyName: "ASF3D",
-  whatsappNumber: "5547999999999",
+  whatsappNumber: "554797475488",
   whatsappDefaultMessage: "Olá! Vim pelo site da ASF3D e gostaria de fazer um orçamento.",
   whatsappCustomMessage: "Olá! Vim pelo site da ASF3D e gostaria de solicitar uma impressão personalizada. Posso enviar a ideia, referência ou arquivo para vocês avaliarem?",
   instagramUrl: "#",
   logo: "assets/img/logo-asf3d.png",
 
-  products: [
+ products: [
     {
       id: 1,
-      name: "Vaso Geométrico",
-      description: "Modelo decorativo com visual moderno, disponível em diferentes cores.",
+      name: "Suporte para Controle",
+      description: "Suporte de mesa para organizar controles, acessórios ou pequenos eletrônicos.",
       category: "Decoração",
       price: "Sob consulta",
-      image: "assets/img/produto-01.svg",
+      image: "assets/img/suporte.png",
       featured: true,
       available: true
     },
     {
       id: 2,
-      name: "Suporte para Controle",
-      description: "Suporte de mesa para organizar controles, acessórios ou pequenos eletrônicos.",
-      category: "Organização",
+      name: "Chaveiros de Lula",
+      description: "Chaveiros personalizados com design de lula.",
+      category: "Personalizados",
       price: "Sob consulta",
-      image: "assets/img/produto-02.svg",
+      image: "assets/img/lulas.png",
       featured: true,
       available: true
     },
     {
       id: 3,
-      name: "Miniatura Decorativa",
-      description: "Peça decorativa para mesa, estante ou coleção.",
+      name: "Miniatura Decorativa do Mascote do Flamengo",
+      description: "Miniatura detalhada do mascote do Flamengo, ideal para colecionadores e fãs do time.",
       category: "Miniaturas",
       price: "Sob consulta",
-      image: "assets/img/produto-03.svg",
+      image: "assets/img/urubu.png",
       featured: true,
       available: true
     },
     {
       id: 4,
-      name: "Organizador Modular",
-      description: "Organizador compacto que pode ser adaptado para diferentes usos.",
-      category: "Organização",
+      name: "Miniatura Decorativa do Mascote do Vasco",
+      description: "Miniatura detalhada do mascote do Vasco, ideal para colecionadores e fãs do time.",
+      category: "Miniaturas",
       price: "Sob consulta",
-      image: "assets/img/produto-04.svg",
-      featured: false,
-      available: true
-    },
-    {
-      id: 5,
-      name: "Chaveiro Personalizado",
-      description: "Modelo para nomes, marcas, símbolos ou pequenos presentes.",
-      category: "Personalizados",
-      price: "Sob consulta",
-      image: "assets/img/produto-05.svg",
-      featured: false,
-      available: true
-    },
-    {
-      id: 6,
-      name: "Suporte de Mesa",
-      description: "Peça funcional para celular, tablet ou pequenos objetos.",
-      category: "Utilidades",
-      price: "Sob consulta",
-      image: "assets/img/produto-06.svg",
+      image: "assets/img/vascao.png",
       featured: false,
       available: true
     }
